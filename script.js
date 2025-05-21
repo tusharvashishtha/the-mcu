@@ -1,3 +1,4 @@
+
 const node = document.querySelector('#yourNodeId');
 if (node && node.parentNode) {
     const range = document.createRange();
@@ -207,7 +208,7 @@ function cursorAnimation(){
 
 }
 
-loadingAnimation();
+// loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryImageAnimation();

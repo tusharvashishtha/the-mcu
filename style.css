@@ -16,7 +16,7 @@ html, body{
 
 }
 body{
-    overflow-x: hidden;
+    overflow: hidden;
     cursor: none;
 }
 
@@ -163,7 +163,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.3vw 5vw;
+    padding: 2.3vh 5vw;
     height: 7vw;
     /* background-color: #0B0B0B; */
     background-color: #151515;
@@ -233,7 +233,7 @@ body{
     width: 100%;
     /* background-color: aqua; */
     background-color: #151515;
-    margin-top: 11vh;
+    padding-top: 11vh;
     position: relative;
 
 }
@@ -321,8 +321,11 @@ body{
     flex-shrink: 0;
     margin: 3vw;
     object-fit: cover;
+    filter: grayscale(100%);
+
   
 }
+
 
 .image-div:nth-child(1){
     height: 29vw;
@@ -679,6 +682,42 @@ body{
     width: fit-content;
 }
 
+@media (max-width: 486px) {
+    #video-container{
+        height: 50vh;
+        width: 90vw;
+        position: relative;
+        left: 10%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #video-container img{
+       
+    }
+    
+    #video-container video{
+        
+    }
+    
+    #playBtn-cursor{
+      
+    
+    }
+    
+    #playBtn-cursor i{
+       
+    }
+    
+
+}
+
+@media (max-width:660px) {
+    #navbar{
+
+    }
+}
+
 @media (max-width: 768px) {
     #loader{ 
         height: 100vh;
@@ -697,14 +736,17 @@ body{
         position: absolute;
         left: 40vw;;
     }
+    #page2{
+        height: 78vh;
+        padding-top: 7vh;
+    }
 
 }
 
 @media (max-width: 558px) {
     #navbar{
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;  
         
     }
     #navbar img{
